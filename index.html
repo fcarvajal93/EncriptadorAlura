@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./css/limpiar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container__header">
+            <div class="header">
+                <img class="logo" src="./assets/logo.png" alt="Logo Encriptador">
+            </div>  
+        </div>
+    </header>
+    <main>
+        <article class="container">
+            <section class="left" id="left">
+                <textarea class="inputtextarea" id="textoInput" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="content_botones">
+                    <span class="info">
+                        <img src="./assets/vector.png" alt="Advertencia" />
+                        Solo letras minúsculas y sin acentos
+                    </span>
+                    <div class="botones">
+                        <button id="button__encriptar" class="button__encriptar">Encriptar</button>
+                        <button id="button__desencriptar" class="button__desencriptar">Desencriptar</button>
+                    </div>
+                </div>
+            </section>
+            <section class="right" id="rigth">
+                <img id="muneco" class="muneco" src="./assets/muneco.png" alt="Muñeco">
+                <textarea id="textoFinal" class="textoFinal" placeholder="El resultado aparecerá aquí"></textarea>
+                <p id="textoInfo" class="info">Ingresa el texto que desees encriptar o desencriptar.</p>
+                <button class="button__copiar bn_ocultar" id="button__copiar">Copiar</button>
+            </section>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="creador">Realizado por: Fabio Alexander Carvajal Guzmán</p>
+        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
